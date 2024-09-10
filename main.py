@@ -51,7 +51,7 @@ def change_message():
     
     message.value = get_wiki_summary(text_box.value)
 
-app = App(title="Coffee")
+app = App(title="Coffee", width=800)
 
 text_box = TextBox(app, align="top", width="fill")
 button = PushButton(app, text="Search", command=change_message, align="top")
